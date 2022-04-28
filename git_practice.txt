@@ -1,0 +1,38 @@
+(팀원)
+
+(팀장)
+
+(팀원)
+
+(팀원)
+-------------------------------------------------
+(팀원)
+로컬 저장소 폴더 만들기 - git bash 실행
+git init // 초기화
+
+git config --global user.name "asdad"
+git config --global user.email "ddddd@dd"
+
+git remote add origin 팀장url
+
+git add some.txt
+git commit -m "some"
+git push origin master
+
+(팀장)
+로컬에 _clone 폴더 만들기 - git bash 실행
+git clone url .
+파일 수정 - add - commit -push
+
+(팀원)
+git pull origin master
+
+
+(팀원) 
+git log // 커밋 히스토리 확인
+
+git checkout - // 최신 커밋
+git checkout 커밋아이디 // 특정 커밋
+----------------------------------------------------------------------
+
+
