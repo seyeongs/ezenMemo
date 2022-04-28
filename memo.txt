@@ -24,8 +24,6 @@ bitbucket.org - 유료
 
 
 
-
-
 *버전관리는 깃, 깃허브(원격저장소 역할)로
 
 *깃-로컬 저장소 관리
@@ -42,7 +40,7 @@ bitbucket.org - 유료
   -git bash에서 git config --global user.name "seyeongs"
 
 - 첫 번째 커밋작업
-  -git add dog_food.txt     // 소스파일 add
+  -git add d og_food.txt     // 소스파일 add
   -git commit -m "강아지 사료 분류"      //-m "커밋에 대한 설명" 
 
 - 두 번째 커밋작업
@@ -60,7 +58,7 @@ bitbucket.org - 유료
   -git checkout -
 
 # 연결된 원격저장소 확인 - git remote -v
-# 연결된 원격저장소 변견 - git remote set-url 변경할URL
+# 연결된 원격저장소 변견 - git remote set-url URL
 ㄴㄴ
 3. 원격 저장소에 커밋 올리기
 (협업팁: 회사에서 유저네임과 유저 이메일은 팀장의 것으로 사용한다)
