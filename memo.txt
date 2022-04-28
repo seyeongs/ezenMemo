@@ -1,0 +1,90 @@
+CLI(간단한 명령어: mkdir, rmdir, cd, move ... )
+GUI
+
+리눅스
+
+wonchol_choi
+
+mstsc
+DESKTOP-6018GMK
+\\DESKTOP-6018GMK 공유폴더 접근 //\\다른 컴퓨터 경로구분
+
+mysql은 php
+jsp는 오라클
+
+jdk
+jre
+jvm
+
+깃의 호스팅
+깃허브.com- 원격 저장소
+깃랩.com - 기업에서 이용
+bitbucket.org - 유료
+
+
+
+
+
+
+*버전관리는 깃, 깃허브(원격저장소 역할)로
+
+*깃-로컬 저장소 관리
+
+1.로컬저장소 만들기
+-원하는 경로에 폴더 생성
+-README.txt 파일 생성
+-해당 폴더 영역 오른쪽 마우스 git bash here을 통해 깃베쉬 열고 git init 입력해서 초기화
+-.git 숨김 폴더가 생김 < 로컬 저장소
+
+2.첫 번째 커밋 만들기
+- 내정보 등록하기
+  -git bash에서 git config --global user.email "pronetp@naver.com"
+  -git bash에서 git config --global user.name "seyeongs"
+
+- 첫 번째 커밋작업
+  -git add dog_food.txt     // 소스파일 add
+  -git commit -m "강아지 사료 분류"      //-m "커밋에 대한 설명" 
+
+- 두 번째 커밋작업
+  -git add dog_food.txt
+  -git commit -m "강아지 사료 분운류"      //-m "커밋에 대한 설명" 
+
+- 커밋 내역 확인
+  -git log
+
+- 커밋 되돌리기
+  -log에서 되돌릴 커밋의 커밋 id 복사
+  -git checkout 커밋아이디
+
+- 최신 log로 커밋
+  -git checkout -
+
+# 연결된 원격저장소 확인 - git remote -v
+# 연결된 원격저장소 변견 - git remote set-url 변경할URL
+ㄴㄴ
+3. 원격 저장소에 커밋 올리기
+(협업팁: 회사에서 유저네임과 유저 이메일은 팀장의 것으로 사용한다)
+-팀장의 경우
+ -깃허브에서 원격 저장소 만들기(원격저장소 = repository)
+-원격저장소 -> 로컬저장소 //팀원의 작업물 검토하기 위해
+ -팀장의 컴퓨터에 플젝이름_clone 폴더 만들기
+ -git clone  repository-url . // .을 입력하지 않으면 레포지토리 폴더가 생성된다 .을 입력하면 레포지토리 안의 파일만 클론된다
+ -파일 수정 후 add, commit, push
+ 
+-팀원1
+ -git remote add origin URL //팀장의 원격 저장소에 연결 //git remote remove origin 연결 해제
+ -git push origin master // master or main // 커밋된 것을 팀장의 repository에 push
+-팀장의 push 후 git pull origin master // 팀장이 push한 원격저장소를 팀원의 로컬 저장소에 pull
+
+
+
+-gui 프로그램 소스트리
+ -설치 mercurial 체크 해제 (끼워팔기)
+ -사용자등록 (name , email)
+ -실행-remote탭-계정추가-호스팅 서비스(깃허브) - 토큰 새로고침(깃허브로그인) -인증
+ -로컬 저장소 만들기 : create-경로지정-생성
+ -로컬 저장소와 소스트리 연결 new tap만들기 - add 경로지정 
+
+-vscode
+-확장 br - open in browser 설치
+-.md 파일 생성 //.md파일은 #제목 하면 원격 저장소에도 제목이 표시된다
