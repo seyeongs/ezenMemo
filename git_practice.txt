@@ -34,5 +34,56 @@ git log // 커밋 히스토리 확인
 git checkout - // 최신 커밋
 git checkout 커밋아이디 // 특정 커밋
 ----------------------------------------------------------------------
+(팀원)
+로컬 저장소 폴더 만들기 - git bash 실행
+git init
+git config --global user.name ""
+git config --global user.email ""
+git remote add origin url
 
+git add FILE.txt
+git commit -m "decription"
+git push origin master
 
+(팀장)
+_clone폴더 만들기 =-git bash 실행
+git clone url .
+add, commit, push
+
+(팀원)
+
+git pull origin master
+
+(팀원)
+git log
+git checkout -
+git checkout commit_id
+
+---------------------------------------------------------------------
+0429
+(팀원)
+로컬 저장소로 쓸 폴더 만들기 -> 해당 폴더에서 git bash실행
+git init
+git config --global user.name "" //깃허브 이름
+git config --global user.email "" //깃허브 아이디
+
+remote add origin url // 원격 저장소 연결
+
+git add 파일.확장자 // 스테이지에 추가  -A는 모든 변경사항
+git commit -m "설명" //커밋하기
+git push origin master // 원격 저장소에 커밋 푸쉬하기
+
+(팀장)
+원격 저장소 clone받을 _clone폴더 만들기 -> 해당 폴더에서 git bash실행
+git clone url . //url 입력하고 클론
+
+git add/commit/push하기 
+
+(팀원)
+git pull origin master //팀장이 푸쉬한 파일 받기
+
+(팀원)
+git checkout - //최신 커밋으로 적용
+git checkout 커밋id //해당 아이디의 커밋으로 적용
+
+git log // 커밋 로그
