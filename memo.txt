@@ -37,7 +37,7 @@ bitbucket.org - 유료
   -git bash에서 git config --global user.name "seyeongs"
 
 - 첫 번째 커밋작업
-  -git add d og_food.txt     // 소스파일 add
+  -git add og_food.txt     // 소스파일 add
   -git commit -m "강아지 사료 분류"      //-m "커밋에 대한 설명" 
 
 - 두 번째 커밋작업
