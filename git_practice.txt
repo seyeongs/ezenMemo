@@ -112,3 +112,61 @@ git pull origin master
 git checkout 커밋id
 git checkout - //최신 커밋
 
+-----------------------------------------------------------------------
+0503
+(팀원)
+로컬 저장소로 쓸 폴더 만들기  - > 해당 폴더에서 git bash 실행
+git init //저장소 초기화
+git config --global user.name ""
+git config --global user.email ""
+git remote add origin url
+git add 파일 이름 OR git add -A
+git commit -m "설명"
+git push origin master
+
+(팀장)
+클론 받을 폴더 생성 - >해당 폴더에서 git bash 실행
+git clone url .
+add/commit/push
+
+(팀원)
+
+git pull origin master
+add/commit/push
+
+(팀원)
+커밋로그 확인 git log
+특정 커밋으로 적용 git checkout 커밋아이디
+최신 커밋으로 적용 git checkout -
+
+-------------------------------------------------------------------------
+(팀원)
+로컬 저장소로 쓸 폴더 생성 -> git bash 
+git init
+git config --global user.name ""
+git config --global user.email ""
+
+git remote add origin url
+
+git add "파일"
+
+git commit -m "설명"
+git push origin master
+
+(팀장)
+_클론 폴더 만들기 -> git bash
+git clone url . 
+git add / commit / push
+
+
+(팀원)
+git pull origin master
+
+git add
+git commit
+git push
+
+(팀원)
+git log
+git checkout -
+git checkout commit id
