@@ -170,3 +170,34 @@ git push
 git log
 git checkout -
 git checkout commit id
+
+-------------------------------------------------------------------
+(팀원)
+로컬 저장소로 쓸 폴더 만들기 - > git bash 실행
+git init  > 저장소 초기화
+git config --global user.name ""
+git config --global user.email "" // 사용자 깃허브 아이디 이메일 등록하기
+
+git remote add origin url >원격 저장소 연결
+
+git add "vkdlf.txt"
+git commit -m "설명"
+git push origin master
+
+(팀장)
+_clone 폴더 만들기
+git clone url .
+git add , commit, push
+
+
+(팀원)
+git pull origin master
+
+git add, commit, push
+
+(팀원)
+
+git checkout - < 최신 커민
+git checkout 커밋id 
+
+git log
